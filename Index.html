@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>VexaFind - Discover It. Compare It. Buy Smart.</title>
+
+  <meta name="description"
+        content="VexaFind helps you discover trending products, useful gadgets, deals and smart buying guides.">
+
+  <meta name="keywords"
+        content="trending products, best gadgets, product reviews, buying guides, online deals, useful products">
+
+  <meta name="robots" content="index, follow">
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: #172033;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .container {
+      width: 92%;
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      background: white;
+      border-bottom: 1px solid #eeeeee;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav {
+      height: 72px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 800;
+      color: #172033;
+    }
+
+    .logo span {
+      color: #6848ff;
+    }
+
+    nav a {
+      color: #333333;
+      margin-left: 25px;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #6848ff;
+    }
+
+    /* HERO */
+
+    .hero {
+      background: linear-gradient(135deg, #f5f2ff, #ffffff);
+      padding: 90px 0;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .tag {
+      color: #6848ff;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      font-size: 68px;
+      line-height: 1.05;
+      margin: 15px 0 20px;
+    }
+
+    h1 span {
+      color: #6848ff;
+    }
+
+    .hero-text {
+      font-size: 20px;
+      color: #687386;
+      max-width: 620px;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 9px;
+      font-weight: 800;
+      margin-right: 10px;
+    }
+
+    .primary {
+      background: #6848ff;
+      color: white;
+    }
+
+    .secondary {
+      background: white;
+      border: 1px solid #dddddd;
+      color: #333333;
+    }
+
+    .hero-card {
+      background: white;
+      padding: 45px;
+      border-radius: 25px;
+      text-align: center;
+      box-shadow: 0 15px 45px rgba(0,0,0,0.08);
+    }
+
+    .hero-icon {
+      font-size: 65px;
+      margin-bottom: 15px;
+    }
+
+    .hero-card h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .hero-card p {
+      color: #687386;
+    }
+
+    /* SECTIONS */
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      font-size: 40px;
+      margin-top: 5px;
+    }
+
+    /* CATEGORIES */
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .category {
+      border: 1px solid #e5e8ef;
+      padding: 30px 22px;
+      border-radius: 16px;
+      color: #172033;
+      transition: 0.2s;
+    }
+
+    .category:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    }
+
+    .category-icon {
+      font-size: 42px;
+    }
+
+    .category h3 {
+      margin: 10px 0 5px;
+    }
+
+    .category p {
+      color: #697386;
+    }
+
+    /* GUIDES */
+
+    .guides {
+      background: #f7f8fb;
+    }
+
+    .articles {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .article {
+      background: white;
+      border: 1px solid #e5e8ef;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .article-image {
+      height: 180px;
+      background: #ebe8ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 55px;
+    }
+
+    .article-content {
+      padding: 22px;
+    }
+
+    .article h3 {
+      font-size: 21px;
+      margin: 8px 0;
+    }
+
+    .article p {
+      color: #697386;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 15px;
+      color: #6848ff;
+      font-weight: 800;
+    }
+
+    /* DEALS */
+
+    .deal-box {
+      background: #6848ff;
+      color: white;
+      padding: 55px 25px;
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    .deal-box h2 {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    .deal-box p {
+      margin-bottom: 25px;
+    }
+
+    .deal-button {
+      display: inline-block;
+      background: white;
+      color: #6848ff;
+      padding: 13px 23px;
+      border-radius: 8px;
+      font-weight: 800;
+    }
+
+    /* ABOUT */
+
+    .about-text {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      color: #687386;
+      font-size: 17px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #111827;
+      color: white;
+      padding: 45px 0 20px;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    footer .logo {
+      color: white;
+    }
+
+    footer p {
+      color: #aaaaaa;
+    }
+
+    footer a {
+      color: #dddddd;
+      margin-left: 18px;
+    }
+
+    .copyright {
+      border-top: 1px solid #333333;
+      margin-top: 30px;
+      padding-top: 20px;
+      color: #aaaaaa;
+      font-size: 14px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 850px) {
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 50px;
+      }
+
+      .categories {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .articles {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .footer-content {
+        display: block;
+      }
+
+    }
+
+    @media (max-width: 500px) {
+
+      .categories {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 43px;
+      }
+
+      section {
+        padding: 60px 0;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+  <div class="container nav">
+
+    <a href="index.html" class="logo">
+      Vexa<span>Find</span>
+    </a>
+
+    <nav>
+
+      <a href="#categories">Categories</a>
+
+      <a href="#guides">Guides</a>
+
+      <a href="#deals">Deals</a>
+
+      <a href="#about">About</a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="container hero-grid">
+
+    <div>
+
+      <div class="tag">
+        SMART PRODUCT DISCOVERY
+      </div>
+
+      <h1>
+        Discover It.<br>
+        <span>Compare It.</span><br>
+        Buy Smart.
+      </h1>
+
+      <p class="hero-text">
+
+        Discover trending products, useful gadgets,
+        amazing deals and practical buying guides
+        to help you shop smarter.
+
+      </p>
+
+      <div class="buttons">
+
+        <a href="#guides" class="btn primary">
+          Explore Guides
+        </a>
+
+        <a href="#categories" class="btn secondary">
+          Browse Categories
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="hero-card">
+
+      <div class="hero-icon">
+        🛍️
+      </div>
+
+      <h2>
+        Find Your Next Favorite Product
+      </h2>
+
+      <p>
+        Discover interesting products and learn
+        what to look for before buying.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CATEGORIES -->
+
+<section id="categories">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <div class="tag">
+        EXPLORE
+      </div>
+
+      <h2>
+        Popular Categories
+      </h2>
+
+    </div>
+
+
+    <div class="categories">
+
+
+      <a href="#" class="category">
+
+        <div class="category-icon">
+          📱
+        </div>
+
+        <h3>
+          Tech & Gadgets
+        </h3>
+
+        <p>
+          Discover useful gadgets and accessories.
+        </p>
+
+      </a>
+
+
+      <a href="#" class="category">
+
+        <div class="category-icon">
+          🏠
+        </div>
+
+        <h3>
+          Home Products
+        </h3>
+
+        <p>
+          Smart products for everyday life.
+        </p>
+
+      </a>
+
+
+      <a href="#" class="category">
+
+        <div class="category-icon">
+          🎣
+        </div>
+
+        <h3>
+          Outdoor
+        </h3>
+
+        <p>
+          Fishing, travel and adventure products.
+        </p>
+
+      </a>
+
+
+      <a href="#deals" class="category">
+
+        <div class="category-icon">
+          💰
+        </div>
+
+        <h3>
+          Deals
+        </h3>
+
+        <p>
+          Interesting products and money-saving finds.
+        </p>
+
+      </a>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- BUYING GUIDES -->
+
+<section id="guides" class="guides">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <div class="tag">
+        LATEST ARTICLES
+      </div>
+
+      <h2>
+        Buying Guides
+      </h2>
+
+    </div>
+
+
+    <div class="articles">
+
+
+      <article class="article">
+
+        <div class="article-image">
+          📱
+        </div>
+
+        <div class="article-content">
+
+          <div class="tag">
+            TECH
+          </div>
+
+          <h3>
+            Best Useful Gadgets to Watch in 2026
+          </h3>
+
+          <p>
+            Explore practical gadgets and what
+            to consider before buying.
+          </p>
+
+          <a href="#" class="read-more">
+            Read Guide →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <article class="article">
+
+        <div class="article-image">
+          🏠
+        </div>
+
+        <div class="article-content">
+
+          <div class="tag">
+            HOME
+          </div>
+
+          <h3>
+            Smart Home Products Worth Considering
+          </h3>
+
+          <p>
+            Discover products designed to make
+            everyday tasks easier.
+          </p>
+
+          <a href="#" class="read-more">
+            Read Guide →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <article class="article">
+
+        <div class="article-image">
+          🎣
+        </div>
+
+        <div class="article-content">
+
+          <div class="tag">
+            OUTDOOR
+          </div>
+
+          <h3>
+            Outdoor Gear for Your Next Adventure
+          </h3>
+
+          <p>
+            Learn what to consider when choosing
+            outdoor gear.
+          </p>
+
+          <a href="#" class="read-more">
+            Read Guide →
+          </a>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- DEALS -->
+
+<section id="deals">
+
+  <div class="container">
+
+    <div class="deal-box">
+
+      <h2>
+        🔥 Discover Trending Deals
+      </h2>
+
+      <p>
+        Find interesting products, comparisons
+        and buying ideas from VexaFind.
+      </p>
+
+      <a href="#guides" class="deal-button">
+        Explore Products
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <div class="tag">
+        ABOUT VEXAFIND
+      </div>
+
+      <h2>
+        Shop Smarter With Better Information
+      </h2>
+
+    </div>
+
+    <p class="about-text">
+
+      VexaFind helps readers discover products,
+      understand their features and make
+      better-informed buying decisions.
+
+      Some links may be affiliate links, meaning
+      we may earn a commission when you make
+      a qualifying purchase.
+
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="container footer-content">
+
+    <div>
+
+      <div class="logo">
+        Vexa<span>Find</span>
+      </div>
+
+      <p>
+        Discover It. Compare It. Buy Smart.
+      </p>
+
+    </div>
+
+
+    <div>
+
+      <a href="#">
+        Privacy Policy
+      </a>
+
+      <a href="#">
+        Disclaimer
+      </a>
+
+      <a href="#">
+        Contact
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <div class="container copyright">
+
+    © 2026 VexaFind. All rights reserved.
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>
