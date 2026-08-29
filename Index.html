@@ -4,406 +4,398 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>VexaFind - Discover It. Compare It. Buy Smart.</title>
+  <title>Tanzania Digital Hub | Scholarships, Jobs & Opportunities</title>
 
-  <meta name="description"
-        content="VexaFind helps you discover trending products, useful gadgets, deals and smart buying guides.">
+  <meta name="description" content="Tanzania Digital Hub - Discover scholarships, jobs, education resources, online opportunities and useful digital opportunities for Tanzanians and Africans.">
 
-  <meta name="keywords"
-        content="trending products, best gadgets, product reviews, buying guides, online deals, useful products">
+  <meta name="keywords" content="Tanzania scholarships, jobs Tanzania, scholarships abroad, online opportunities, education Tanzania, study abroad, career opportunities">
 
-  <meta name="robots" content="index, follow">
+  <meta name="author" content="Tanzania Digital Hub">
+
+  <!-- Google AdSense -->
+  <script async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2004981151172844"
+    crossorigin="anonymous">
+  </script>
 
   <style>
-
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
-    }
-
-    html {
+      box-sizing: border-box;
       scroll-behavior: smooth;
     }
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: #ffffff;
+      background: #f5f7fb;
       color: #172033;
       line-height: 1.6;
     }
 
-    a {
-      text-decoration: none;
-    }
-
-    .container {
-      width: 92%;
-      max-width: 1150px;
-      margin: auto;
-    }
-
     /* HEADER */
-
     header {
-      background: white;
-      border-bottom: 1px solid #eeeeee;
+      background: #071c35;
+      color: white;
       position: sticky;
       top: 0;
-      z-index: 100;
+      z-index: 1000;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.15);
     }
 
     .nav {
-      height: 72px;
+      max-width: 1150px;
+      margin: auto;
+      padding: 16px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
     .logo {
-      font-size: 28px;
-      font-weight: 800;
-      color: #172033;
+      font-size: 23px;
+      font-weight: bold;
+      white-space: nowrap;
     }
 
     .logo span {
-      color: #6848ff;
+      color: #00c896;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     nav a {
-      color: #333333;
-      margin-left: 25px;
-      font-weight: 600;
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 14px;
+      font-weight: 500;
     }
 
     nav a:hover {
-      color: #6848ff;
+      color: #00c896;
     }
 
     /* HERO */
-
     .hero {
-      background: linear-gradient(135deg, #f5f2ff, #ffffff);
-      padding: 90px 0;
+      background: linear-gradient(135deg, #071c35, #0b4161);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
     }
 
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 60px;
-      align-items: center;
+    .hero-content {
+      max-width: 900px;
+      margin: auto;
     }
 
-    .tag {
-      color: #6848ff;
-      font-size: 13px;
-      font-weight: 800;
-      letter-spacing: 2px;
+    .hero h1 {
+      font-size: 44px;
+      line-height: 1.2;
+      margin-bottom: 20px;
     }
 
-    h1 {
-      font-size: 68px;
-      line-height: 1.05;
-      margin: 15px 0 20px;
+    .hero h1 span {
+      color: #00d69b;
     }
 
-    h1 span {
-      color: #6848ff;
+    .hero p {
+      font-size: 18px;
+      color: #dce8f1;
+      max-width: 720px;
+      margin: 0 auto 30px;
     }
 
-    .hero-text {
-      font-size: 20px;
-      color: #687386;
-      max-width: 620px;
-    }
-
-    .buttons {
-      margin-top: 30px;
-    }
-
-    .btn {
+    .buttons a {
       display: inline-block;
-      padding: 14px 22px;
-      border-radius: 9px;
-      font-weight: 800;
-      margin-right: 10px;
+      padding: 13px 23px;
+      margin: 5px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     .primary {
-      background: #6848ff;
+      background: #00c896;
       color: white;
     }
 
     .secondary {
+      border: 1px solid white;
+      color: white;
+    }
+
+    .primary:hover {
+      opacity: 0.9;
+    }
+
+    .secondary:hover {
       background: white;
-      border: 1px solid #dddddd;
-      color: #333333;
+      color: #071c35;
     }
 
-    .hero-card {
-      background: white;
-      padding: 45px;
-      border-radius: 25px;
-      text-align: center;
-      box-shadow: 0 15px 45px rgba(0,0,0,0.08);
-    }
-
-    .hero-icon {
-      font-size: 65px;
-      margin-bottom: 15px;
-    }
-
-    .hero-card h2 {
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-
-    .hero-card p {
-      color: #687386;
-    }
-
-    /* SECTIONS */
-
-    section {
-      padding: 80px 0;
+    /* GENERAL */
+    .container {
+      max-width: 1150px;
+      margin: auto;
+      padding: 60px 20px;
     }
 
     .section-title {
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 35px;
     }
 
     .section-title h2 {
-      font-size: 40px;
-      margin-top: 5px;
+      font-size: 30px;
+      margin-bottom: 8px;
     }
 
-    /* CATEGORIES */
-
-    .categories {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
+    .section-title p {
+      color: #687386;
     }
 
-    .category {
-      border: 1px solid #e5e8ef;
-      padding: 30px 22px;
-      border-radius: 16px;
-      color: #172033;
-      transition: 0.2s;
-    }
-
-    .category:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-    }
-
-    .category-icon {
-      font-size: 42px;
-    }
-
-    .category h3 {
-      margin: 10px 0 5px;
-    }
-
-    .category p {
-      color: #697386;
-    }
-
-    /* GUIDES */
-
-    .guides {
-      background: #f7f8fb;
-    }
-
-    .articles {
+    /* CARDS */
+    .cards {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 22px;
     }
 
-    .article {
+    .card {
       background: white;
-      border: 1px solid #e5e8ef;
-      border-radius: 16px;
-      overflow: hidden;
+      padding: 28px;
+      border-radius: 12px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+      transition: 0.3s;
     }
 
-    .article-image {
-      height: 180px;
-      background: #ebe8ff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 55px;
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.12);
     }
 
-    .article-content {
-      padding: 22px;
-    }
-
-    .article h3 {
-      font-size: 21px;
-      margin: 8px 0;
-    }
-
-    .article p {
-      color: #697386;
-    }
-
-    .read-more {
-      display: inline-block;
-      margin-top: 15px;
-      color: #6848ff;
-      font-weight: 800;
-    }
-
-    /* DEALS */
-
-    .deal-box {
-      background: #6848ff;
-      color: white;
-      padding: 55px 25px;
-      border-radius: 20px;
-      text-align: center;
-    }
-
-    .deal-box h2 {
+    .icon {
       font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
       margin-bottom: 10px;
     }
 
-    .deal-box p {
-      margin-bottom: 25px;
-    }
-
-    .deal-button {
-      display: inline-block;
-      background: white;
-      color: #6848ff;
-      padding: 13px 23px;
-      border-radius: 8px;
-      font-weight: 800;
-    }
-
-    /* ABOUT */
-
-    .about-text {
-      max-width: 800px;
-      margin: auto;
-      text-align: center;
+    .card p {
       color: #687386;
-      font-size: 17px;
+      margin-bottom: 18px;
+    }
+
+    .card a {
+      color: #008f70;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    /* FEATURED */
+    .featured {
+      background: white;
+    }
+
+    .opportunity {
+      border-left: 5px solid #00c896;
+      background: #f8fffc;
+      padding: 22px;
+      margin-bottom: 18px;
+      border-radius: 8px;
+    }
+
+    .opportunity h3 {
+      margin-bottom: 8px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #dffaf2;
+      color: #007b61;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    /* ABOUT PREVIEW */
+    .about-preview {
+      background: white;
+      text-align: center;
+    }
+
+    .about-box {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .about-box p {
+      color: #687386;
+      margin-bottom: 20px;
+    }
+
+    /* CTA */
+    .cta {
+      background: #071c35;
+      color: white;
+      text-align: center;
+      padding: 65px 20px;
+    }
+
+    .cta h2 {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    .cta p {
+      color: #d8e4ee;
+      max-width: 700px;
+      margin: 0 auto 25px;
+    }
+
+    /* CONTACT PREVIEW */
+    .contact-preview {
+      text-align: center;
+    }
+
+    .email-box {
+      background: white;
+      max-width: 650px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+    }
+
+    .email-box a {
+      color: #008f70;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 18px;
     }
 
     /* FOOTER */
-
     footer {
-      background: #111827;
+      background: #041426;
+      color: #b9c6d2;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .footer-logo {
       color: white;
-      padding: 45px 0 20px;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 18px;
     }
 
-    .footer-content {
-      display: flex;
-      justify-content: space-between;
-      gap: 30px;
+    .footer-logo span {
+      color: #00c896;
     }
 
-    footer .logo {
-      color: white;
+    .footer-links {
+      margin-bottom: 20px;
     }
 
-    footer p {
-      color: #aaaaaa;
-    }
-
-    footer a {
-      color: #dddddd;
-      margin-left: 18px;
-    }
-
-    .copyright {
-      border-top: 1px solid #333333;
-      margin-top: 30px;
-      padding-top: 20px;
-      color: #aaaaaa;
+    .footer-links a {
+      color: #00c896;
+      text-decoration: none;
+      margin: 0 8px;
       font-size: 14px;
     }
 
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    .copyright {
+      font-size: 13px;
+      color: #8795a3;
+    }
+
     /* MOBILE */
+    @media (max-width: 768px) {
 
-    @media (max-width: 850px) {
+      .nav {
+        flex-direction: column;
+        gap: 14px;
+      }
 
-      .hero-grid {
+      .logo {
+        font-size: 21px;
+      }
+
+      nav a {
+        margin: 4px 7px;
+        font-size: 13px;
+      }
+
+      .hero {
+        padding: 60px 18px;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .cards {
         grid-template-columns: 1fr;
       }
 
-      h1 {
-        font-size: 50px;
+      .section-title h2 {
+        font-size: 26px;
       }
-
-      .categories {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .articles {
-        grid-template-columns: 1fr;
-      }
-
-      nav {
-        display: none;
-      }
-
-      .footer-content {
-        display: block;
-      }
-
     }
-
-    @media (max-width: 500px) {
-
-      .categories {
-        grid-template-columns: 1fr;
-      }
-
-      h1 {
-        font-size: 43px;
-      }
-
-      section {
-        padding: 60px 0;
-      }
-
-    }
-
   </style>
-
 </head>
 
 <body>
 
-<!-- HEADER -->
+<!-- ================= HEADER ================= -->
 
 <header>
 
-  <div class="container nav">
+  <div class="nav">
 
-    <a href="index.html" class="logo">
-      Vexa<span>Find</span>
-    </a>
+    <div class="logo">
+      Tanzania<span>DigitalHub</span>
+    </div>
 
     <nav>
+      <a href="index.html">Home</a>
 
-      <a href="#categories">Categories</a>
+      <a href="scholarships.html">
+        Scholarships
+      </a>
 
-      <a href="#guides">Guides</a>
+      <a href="jobs.html">
+        Jobs
+      </a>
 
-      <a href="#deals">Deals</a>
+      <a href="opportunities.html">
+        Opportunities
+      </a>
 
-      <a href="#about">About</a>
+      <a href="about.html">
+        About
+      </a>
 
+      <a href="contact.html">
+        Contact
+      </a>
     </nav>
 
   </div>
@@ -411,304 +403,30 @@
 </header>
 
 
-<!-- HERO -->
+<!-- ================= HERO ================= -->
 
 <section class="hero">
 
-  <div class="container hero-grid">
+  <div class="hero-content">
 
-    <div>
+    <h1>
+      Discover Your Next
+      <span>Opportunity</span>
+    </h1>
 
-      <div class="tag">
-        SMART PRODUCT DISCOVERY
-      </div>
+    <p>
+      Scholarships, jobs, education resources and digital
+      opportunities for Tanzanians and Africans.
+    </p>
 
-      <h1>
-        Discover It.<br>
-        <span>Compare It.</span><br>
-        Buy Smart.
-      </h1>
+    <div class="buttons">
 
-      <p class="hero-text">
-
-        Discover trending products, useful gadgets,
-        amazing deals and practical buying guides
-        to help you shop smarter.
-
-      </p>
-
-      <div class="buttons">
-
-        <a href="#guides" class="btn primary">
-          Explore Guides
-        </a>
-
-        <a href="#categories" class="btn secondary">
-          Browse Categories
-        </a>
-
-      </div>
-
-    </div>
-
-
-    <div class="hero-card">
-
-      <div class="hero-icon">
-        🛍️
-      </div>
-
-      <h2>
-        Find Your Next Favorite Product
-      </h2>
-
-      <p>
-        Discover interesting products and learn
-        what to look for before buying.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- CATEGORIES -->
-
-<section id="categories">
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <div class="tag">
-        EXPLORE
-      </div>
-
-      <h2>
-        Popular Categories
-      </h2>
-
-    </div>
-
-
-    <div class="categories">
-
-
-      <a href="#" class="category">
-
-        <div class="category-icon">
-          📱
-        </div>
-
-        <h3>
-          Tech & Gadgets
-        </h3>
-
-        <p>
-          Discover useful gadgets and accessories.
-        </p>
-
+      <a href="opportunities.html" class="primary">
+        Explore Opportunities
       </a>
 
-
-      <a href="#" class="category">
-
-        <div class="category-icon">
-          🏠
-        </div>
-
-        <h3>
-          Home Products
-        </h3>
-
-        <p>
-          Smart products for everyday life.
-        </p>
-
-      </a>
-
-
-      <a href="#" class="category">
-
-        <div class="category-icon">
-          🎣
-        </div>
-
-        <h3>
-          Outdoor
-        </h3>
-
-        <p>
-          Fishing, travel and adventure products.
-        </p>
-
-      </a>
-
-
-      <a href="#deals" class="category">
-
-        <div class="category-icon">
-          💰
-        </div>
-
-        <h3>
-          Deals
-        </h3>
-
-        <p>
-          Interesting products and money-saving finds.
-        </p>
-
-      </a>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- BUYING GUIDES -->
-
-<section id="guides" class="guides">
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <div class="tag">
-        LATEST ARTICLES
-      </div>
-
-      <h2>
-        Buying Guides
-      </h2>
-
-    </div>
-
-
-    <div class="articles">
-
-
-      <article class="article">
-
-        <div class="article-image">
-          📱
-        </div>
-
-        <div class="article-content">
-
-          <div class="tag">
-            TECH
-          </div>
-
-          <h3>
-            Best Useful Gadgets to Watch in 2026
-          </h3>
-
-          <p>
-            Explore practical gadgets and what
-            to consider before buying.
-          </p>
-
-          <a href="#" class="read-more">
-            Read Guide →
-          </a>
-
-        </div>
-
-      </article>
-
-
-      <article class="article">
-
-        <div class="article-image">
-          🏠
-        </div>
-
-        <div class="article-content">
-
-          <div class="tag">
-            HOME
-          </div>
-
-          <h3>
-            Smart Home Products Worth Considering
-          </h3>
-
-          <p>
-            Discover products designed to make
-            everyday tasks easier.
-          </p>
-
-          <a href="#" class="read-more">
-            Read Guide →
-          </a>
-
-        </div>
-
-      </article>
-
-
-      <article class="article">
-
-        <div class="article-image">
-          🎣
-        </div>
-
-        <div class="article-content">
-
-          <div class="tag">
-            OUTDOOR
-          </div>
-
-          <h3>
-            Outdoor Gear for Your Next Adventure
-          </h3>
-
-          <p>
-            Learn what to consider when choosing
-            outdoor gear.
-          </p>
-
-          <a href="#" class="read-more">
-            Read Guide →
-          </a>
-
-        </div>
-
-      </article>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- DEALS -->
-
-<section id="deals">
-
-  <div class="container">
-
-    <div class="deal-box">
-
-      <h2>
-        🔥 Discover Trending Deals
-      </h2>
-
-      <p>
-        Find interesting products, comparisons
-        and buying ideas from VexaFind.
-      </p>
-
-      <a href="#guides" class="deal-button">
-        Explore Products
+      <a href="scholarships.html" class="secondary">
+        Find Scholarships
       </a>
 
     </div>
@@ -718,87 +436,353 @@
 </section>
 
 
-<!-- ABOUT -->
+<!-- ================= CATEGORIES ================= -->
 
-<section id="about">
+<section class="container">
 
-  <div class="container">
+  <div class="section-title">
 
-    <div class="section-title">
+    <h2>Explore Tanzania Digital Hub</h2>
 
-      <div class="tag">
-        ABOUT VEXAFIND
-      </div>
-
-      <h2>
-        Shop Smarter With Better Information
-      </h2>
-
-    </div>
-
-    <p class="about-text">
-
-      VexaFind helps readers discover products,
-      understand their features and make
-      better-informed buying decisions.
-
-      Some links may be affiliate links, meaning
-      we may earn a commission when you make
-      a qualifying purchase.
-
+    <p>
+      Find opportunities that can help you build your education,
+      career and future.
     </p>
 
   </div>
 
+
+  <div class="cards">
+
+    <!-- SCHOLARSHIPS -->
+
+    <div class="card">
+
+      <div class="icon">🎓</div>
+
+      <h3>Scholarships</h3>
+
+      <p>
+        Discover scholarships, study abroad opportunities
+        and education resources.
+      </p>
+
+      <a href="scholarships.html">
+        Explore Scholarships →
+      </a>
+
+    </div>
+
+
+    <!-- JOBS -->
+
+    <div class="card">
+
+      <div class="icon">💼</div>
+
+      <h3>Jobs & Careers</h3>
+
+      <p>
+        Find job opportunities, internships and useful
+        career resources.
+      </p>
+
+      <a href="jobs.html">
+        Explore Jobs →
+      </a>
+
+    </div>
+
+
+    <!-- OPPORTUNITIES -->
+
+    <div class="card">
+
+      <div class="icon">🚀</div>
+
+      <h3>Opportunities</h3>
+
+      <p>
+        Discover useful online, education and digital
+        opportunities.
+      </p>
+
+      <a href="opportunities.html">
+        Explore Opportunities →
+      </a>
+
+    </div>
+
+  </div>
+
 </section>
 
 
-<!-- FOOTER -->
+<!-- ================= FEATURED SCHOLARSHIPS ================= -->
+
+<section class="container featured">
+
+  <div class="section-title">
+
+    <h2>🎓 Featured Opportunities</h2>
+
+    <p>
+      Start exploring opportunities available on our platform.
+    </p>
+
+  </div>
+
+
+  <div class="opportunity">
+
+    <span class="badge">
+      SCHOLARSHIPS
+    </span>
+
+    <h3>
+      Scholarship Opportunities
+    </h3>
+
+    <p>
+      Explore scholarship opportunities and resources
+      for students looking to continue their education.
+    </p>
+
+    <a href="scholarships.html"
+       style="color:#008f70;font-weight:bold;text-decoration:none;">
+      View Scholarships →
+    </a>
+
+  </div>
+
+
+  <div class="opportunity">
+
+    <span class="badge">
+      CAREERS
+    </span>
+
+    <h3>
+      Jobs & Career Opportunities
+    </h3>
+
+    <p>
+      Find useful job and career resources for students,
+      graduates and job seekers.
+    </p>
+
+    <a href="jobs.html"
+       style="color:#008f70;font-weight:bold;text-decoration:none;">
+      View Jobs →
+    </a>
+
+  </div>
+
+
+  <div class="opportunity">
+
+    <span class="badge">
+      DIGITAL
+    </span>
+
+    <h3>
+      Online Opportunities
+    </h3>
+
+    <p>
+      Discover digital opportunities, online learning
+      resources and useful internet opportunities.
+    </p>
+
+    <a href="opportunities.html"
+       style="color:#008f70;font-weight:bold;text-decoration:none;">
+      Explore →
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- ================= ADSENSE ================= -->
+
+<section class="container">
+
+  <div style="text-align:center;">
+
+    <!--
+      Google AdSense code can be placed here
+      after creating an approved AdSense ad unit.
+    -->
+
+  </div>
+
+</section>
+
+
+<!-- ================= ABOUT PREVIEW ================= -->
+
+<section class="about-preview">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>About Tanzania Digital Hub</h2>
+
+    </div>
+
+    <div class="about-box">
+
+      <p>
+        Tanzania Digital Hub is an online platform created to
+        help Tanzanians and Africans discover useful education,
+        career and digital opportunities.
+      </p>
+
+      <p>
+        Our goal is to make important opportunities easier to
+        discover, understand and access in one convenient place.
+      </p>
+
+      <a href="about.html"
+         class="primary"
+         style="display:inline-block;
+                padding:12px 22px;
+                border-radius:7px;
+                text-decoration:none;
+                font-weight:bold;">
+        Read More About Us
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+  <h2>
+    Don't Miss Your Next Opportunity
+  </h2>
+
+  <p>
+    Visit Tanzania Digital Hub regularly for new scholarships,
+    jobs, education resources and digital opportunities.
+  </p>
+
+  <a href="opportunities.html"
+     class="primary"
+     style="display:inline-block;
+            padding:13px 23px;
+            border-radius:7px;
+            text-decoration:none;
+            font-weight:bold;">
+    Explore Opportunities
+  </a>
+
+</section>
+
+
+<!-- ================= CONTACT PREVIEW ================= -->
+
+<section class="container contact-preview">
+
+  <div class="section-title">
+
+    <h2>Contact Tanzania Digital Hub</h2>
+
+    <p>
+      Have a question, suggestion or opportunity to share?
+    </p>
+
+  </div>
+
+
+  <div class="email-box">
+
+    <p>
+      You can contact us directly by email:
+    </p>
+
+    <br>
+
+    <a href="mailto:anordsom@gmail.com">
+      anordsom@gmail.com
+    </a>
+
+    <br><br>
+
+    <a href="contact.html"
+       class="primary"
+       style="display:inline-block;
+              padding:12px 22px;
+              border-radius:7px;
+              color:white;
+              font-size:15px;">
+      Go to Contact Page
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
-  <div class="container footer-content">
-
-    <div>
-
-      <div class="logo">
-        Vexa<span>Find</span>
-      </div>
-
-      <p>
-        Discover It. Compare It. Buy Smart.
-      </p>
-
-    </div>
+  <div class="footer-logo">
+    Tanzania<span>DigitalHub</span>
+  </div>
 
 
-    <div>
+  <div class="footer-links">
 
-      <a href="privacy‐policy.html">
-        
-      </a>
+    <a href="index.html">
+      Home
+    </a>
 
-      <a href="Disclaimer. html">
-        
-      </a>
+    <a href="scholarships.html">
+      Scholarships
+    </a>
 
-      <a href="Contact.html">
-        
-      </a>
+    <a href="jobs.html">
+      Jobs
+    </a>
 
-    </div>
+    <a href="opportunities.html">
+      Opportunities
+    </a>
+
+    <a href="about.html">
+      About
+    </a>
+
+    <a href="contact.html">
+      Contact
+    </a>
+
+    <a href="privacy.html">
+      Privacy Policy
+    </a>
+
+    <a href="disclaimer.html">
+      Disclaimer
+    </a>
 
   </div>
 
 
-  <div class="container copyright">
-
-    © 2026 VexaFind. All rights reserved.
-
-  </div>
+  <p class="copyright">
+    © 2026 Tanzania Digital Hub. All Rights Reserved.
+  </p>
 
 </footer>
-
 
 </body>
 </html>
